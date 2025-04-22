@@ -4,7 +4,6 @@ import sys
 
 # Initialize the logger
 logger = get_logger(__name__)
-print(__name__)
 
 # Test the logger
 logger.info("Welcome to the customer churn prediction project")
