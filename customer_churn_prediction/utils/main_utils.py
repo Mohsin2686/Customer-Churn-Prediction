@@ -8,14 +8,14 @@ from pandas import DataFrame
 
 from customer_churn_prediction.exception import CustomerChurnException
 
-from customer_churn_prediction.logger import get_logger
-# Initialize the logger
-logging = get_logger(__name__)
+from customer_churn_prediction.logger import logging
 
 
 def read_yaml_file(file_path: str) -> dict:
     try:
         with open(file_path, "rb") as yaml_file:
+            print("Reading YAML file")
+            print(file_path)
             return yaml.safe_load(yaml_file)
 
     except Exception as e:
