@@ -47,6 +47,33 @@ categorical_columns:
 - Churn
 
 drop_columns:
-- cutomerID
+- customerID
 - PhoneService
 - MultipleLines
+
+# for data transformation
+num_features:
+- tenure
+- MonthlyCharges
+- TotalCharges
+
+binary_cols:
+- Partner
+- Dependents
+- OnlineSecurity
+- OnlineBackup
+- DeviceProtection
+- TechSupport
+- StreamingTV
+- StreamingMovies
+- PaperlessBilling
+oh_columns:
+- Contract
+- PaymentMethod
+- InternetService
+- gender
+
+transform_columns:
+- MonthlyCharges
+- TotalCharges
+- tenure
