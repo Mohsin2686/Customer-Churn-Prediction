@@ -96,8 +96,6 @@ class DataTransformation:
                 train_df = DataTransformation.read_data(file_path=self.data_ingestion_artifact.trained_file_path)
                 test_df = DataTransformation.read_data(file_path=self.data_ingestion_artifact.test_file_path)
 
-                print(train_df.shape)
-                print(test_df.shape)
 
                 input_feature_train_df = train_df.drop(columns=[TARGET_COLUMN], axis=1)
                 target_feature_train_df = train_df[TARGET_COLUMN]
