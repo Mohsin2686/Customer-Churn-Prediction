@@ -20,12 +20,11 @@ conda activate churn
 
 ```bash
 pip install -r requirements.txt
+```
 
-```bash
+## Run all the cells in notebooks/mongodb_connetion.ipynb to create the collection of dataset in MongoDB
 
-### Run all the cells in notebooks/mongodb_connetion.ipynb to create the collection of dataset in MongoDB
-
-### Export the  environment variable
+## Export the  environment variable
 
 
 
@@ -40,15 +39,14 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 ### To run training pipeling 
 
 ```bash
-
 python domo.py
+```
 
-```bash
+
 
 ### To run prediction app 
 
 ```bash
 
 python app.py
-
-```bash
+```
